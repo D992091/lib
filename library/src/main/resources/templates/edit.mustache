@@ -1,0 +1,25 @@
+<html>
+<head>
+    <title>Библиотека</title>
+</head>
+<body>
+<button><a href="/"> Вернуться на главную</a></button>
+<form method="post" action="/found">
+    <p>Номер<input name="id" required> </p>
+    <button type="submit">Найти</button>
+</form>
+
+{{#result}}
+    <form method="post" action="/change">
+        <p>Номер <input name="id" required readonly value="{{id}}"> </p>
+        <p>Название <input name="name" required value="{{name}}" minlength="3"> </p>
+        <p>Автор <input name="author" required value="{{author}}" minlength="3"> </p>
+        <p>Артикул <input name="articul" required maxlength="7" value="{{articul}}" minlength="3"> </p>
+        <button type="submit">Изменить</button>
+    </form>
+{{/result}}
+
+{{error}}
+</body>
+
+</html>

@@ -1,0 +1,63 @@
+<html>
+<head>
+    <title>Библиотека</title>
+</head>
+<body>
+<button><a href="/add"> Добавить</a></button>
+<button><a href="/delete">Удалить</a></button>
+<button><a href="/edit?id=0">Изменить</a></button>
+<button><a href="/find">Найти</a></button>
+<table border="1px solid">
+    <tr>
+        <td><a href="/letter?letter=А">А</a></td>
+        <td><a href="/letter?letter=Б">Б</a></td>
+        <td><a href="/letter?letter=В">В</a></td>
+        <td><a href="/letter?letter=Г">Г</a></td>
+        <td><a href="/letter?letter=Д">Д</a></td>
+        <td><a href="/letter?letter=Е">Е</a></td>
+        <td><a href="/letter?letter=Ё">Ё</a></td>
+        <td><a href="/letter?letter=Ж">Ж</a></td>
+        <td><a href="/letter?letter=З">З</a></td>
+        <td><a href="/letter?letter=И">И</a></td>
+        <td><a href="/letter?letter=Й">Й</a></td>
+        <td><a href="/letter?letter=К">К</a></td>
+        <td><a href="/letter?letter=Л">Л</a></td>
+        <td><a href="/letter?letter=М">М</a></td>
+        <td><a href="/letter?letter=Н">Н</a></td>
+        <td><a href="/letter?letter=О">О</a></td>
+        <td><a href="/letter?letter=П">П</a></td>
+        <td><a href="/letter?letter=Р">Р</a></td>
+        <td><a href="/letter?letter=С">С</a></td>
+        <td><a href="/letter?letter=Т">Т</a></td>
+        <td><a href="/letter?letter=У">У</a></td>
+        <td><a href="/letter?letter=Ф">Ф</a></td>
+        <td><a href="/letter?letter=Х">Х</a></td>
+        <td><a href="/letter?letter=Ц">Ц</a></td>
+        <td><a href="/letter?letter=Ч">Ч</a></td>
+        <td><a href="/letter?letter=Ш">Ш</a></td>
+        <td><a href="/letter?letter=Щ">Щ</a></td>
+        <td><a href="/letter?letter=Ю">Ю</a></td>
+        <td><a href="/letter?letter=Э">Э</a></td>
+        <td><a href="/letter?letter=Я">Я</a></td>
+    </tr>
+</table>
+<table border="1px solid">
+    <tr>
+        <td>№</td>
+        <td>Название</td>
+        <td>Автор</td>
+        <td>Артикул</td>
+    </tr>
+{{#books}}
+    <tr>
+        <td>{{id}}</td>
+        <td>{{name}}</td>
+        <td>{{author}}</td>
+        <td>{{articul}}</td>
+    </tr>
+
+{{/books}}
+</table>
+</body>
+
+</html>

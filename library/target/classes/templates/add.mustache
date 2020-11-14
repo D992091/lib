@@ -1,0 +1,16 @@
+<html>
+<head>
+    <title>Библиотека</title>
+</head>
+<body>
+<button><a href="/"> Вернуться на главную</a></button>
+<form method="post" action="/added">
+    <p>Название <input name="name" required minlength="3"> </p>
+    <p>Автор <input name="author" required minlength="5"> </p>
+    <p>Артикул <input name="articul" required maxlength="7" minlength="7"></p>
+<button type="submit">Добавить</button>
+</form>
+{{error}}
+</body>
+
+</html>

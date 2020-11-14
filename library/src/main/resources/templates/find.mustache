@@ -1,0 +1,37 @@
+<html>
+<head>
+    <title>Библиотека</title>
+</head>
+<body>
+<button><a href="/"> Вернуться на главную</a></button>
+<form method="post" action="/search">
+    <select required name="type">
+        <option>Название книги</option>
+        <option>Автор</option>
+        <option>Артикул</option>
+    </select>
+    <p>Значение<input name="value" required> </p>
+    <button type="submit">Найти</button>
+</form>
+
+<table border="1px solid">
+    <tr>
+        <td>№</td>
+        <td>Название</td>
+        <td>Автор</td>
+        <td>Артикул</td>
+    </tr>
+    {{#books}}
+        <tr>
+            <td>{{id}}</td>
+            <td>{{name}}</td>
+            <td>{{author}}</td>
+            <td>{{articul}}</td>
+        </tr>
+
+    {{/books}}
+</table>
+{{error}}
+</body>
+
+</html>
